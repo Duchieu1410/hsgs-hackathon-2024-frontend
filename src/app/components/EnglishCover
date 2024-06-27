@@ -1,0 +1,75 @@
+'use client'
+
+import Link from 'next/link';
+
+const EnglishCover: React.FC = () => {
+    return (
+        <div>
+            <div className="max-w-4xl mx-auto mt-8 p-6 bg-gray-900 text-white shadow-lg rounded-lg">
+                <h2 className="text-3xl font-bold text-gray-300 mb-6">Rules for Digital SAT Reading & Writing Test</h2>
+                <div className="divide-y divide-gray-800">
+                    <div className="py-4">
+                        <h3 className="text-xl font-semibold mb-2">1. Prohibited Items</h3>
+                        <p className="text-lg text-gray-400">
+                            You are not allowed to use any electronic devices, including cell phones, smartwatches, cameras, or any other recording devices. 
+                            The use of these items during the test is strictly prohibited and can result in disqualification.
+                        </p>
+                    </div>
+                    <div className="py-4">
+                        <h3 className="text-xl font-semibold mb-2">2. No Outside Materials</h3>
+                        <p className="text-lg text-gray-400">
+                            You are not allowed to bring any books, dictionaries, notes, or other study materials into the test center. 
+                            All necessary materials, such as scratch paper and pencils, will be provided.
+                        </p>
+                    </div>
+                    <div className="py-4">
+                        <h3 className="text-xl font-semibold mb-2">3. Honesty and Integrity</h3>
+                        <p className="text-lg text-gray-400">
+                            Any form of cheating, including sharing test content or answers, using unauthorized aids, or attempting to access the test materials before the test, is strictly prohibited. 
+                            Violations of these rules can result in score cancellation and further disciplinary action.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="max-w-4xl mx-auto mt-8 p-6 bg-gray-900 text-white shadow-lg rounded-lg">
+                <h2 className="text-3xl font-bold text-gray-300 mb-6">Reading & Writing Test Format</h2>
+                <div className="divide-y divide-gray-800">
+                    <div className="py-4">
+                        <h3 className="text-xl font-semibold mb-2">Adaptive Testing Format:</h3>
+                        <p className="text-lg text-gray-400">
+                        The digital SAT uses a multistage adaptive testing format. 
+                        The test adjusts the difficulty of questions based on the student's performance in previous sections. 
+                        Each student starts with a module of medium difficulty, and their performance in this module determines the difficulty level of the next module they receive.
+                        </p>
+                    </div>
+                    <div className="py-4">
+                        <h3 className="text-xl font-semibold mb-2">Module Structure:</h3>
+                        <p className="text-lg text-gray-400">
+                        The Reading and Writing section is divided into two modules. 
+                        Each module contains 27 questions and is allotted 32 minutes to complete. 
+                        The questions in each module are a mix of reading comprehension and writing and language questions, all interspersed rather than separated.
+                        </p>
+                    </div>
+                    <div className="py-4">
+                        <h3 className="text-xl font-semibold mb-2">Question Types and Passage Lengths:</h3>
+                        <p className="text-lg text-gray-400">
+                        The test includes a variety of question types, such as multiple-choice questions that ask students to interpret, synthesize, and use evidence from a range of texts. 
+                        The passages are shorter compared to the traditional SAT, allowing for more focused questions on specific aspects of the text. 
+                        Passages cover a range of topics, including literature, history, social studies, and science.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex flex-col items-center justify-center h-screen bg-gray-900 text-white">
+                <h1 className="text-6xl font-bold mb-8">Get ready</h1>
+                <Link href="/english/questions" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-2xl">
+                    Start the Test
+                </Link>
+            </div>
+        </div>
+    );
+};
+
+export default EnglishCover;
